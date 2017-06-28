@@ -1,3 +1,26 @@
 .text {
+  margin-top: 0;
+  text-align: center;
   
+  &--hidden {
+    display: none;
+  }
+  
+  span {
+    display: none;
+  }
+}
+
+//----------------TABLET---------------
+
+@media @tablet {
+  .text {
+    &--hidden {
+      display: block;
+    }
+    
+    span {
+      display: inline-block;
+    }
+  }
 }

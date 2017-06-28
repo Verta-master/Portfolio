@@ -7,6 +7,19 @@
 .list__link {
   text-decoration: none;
   color: @normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.list__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;  
 }
 
 .list__title {
@@ -16,6 +29,7 @@
   text-transform: uppercase;
   text-align: center;
   color: @blue;
+  margin-bottom: 10px;
   
   &--light {
     color: @light;

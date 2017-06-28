@@ -1,5 +1,5 @@
 .header-main {
-  width: 100%;
+  width: 320px;
   background-color: @dark-blue;
   position: fixed;
 }
@@ -7,9 +7,18 @@
 .header-main__link {
   display: block;
   color: @light;
-  font-size: 30px;
-  line-height: 40px;
+  font-size: 21px;
+  line-height: 30px;
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
+}
+
+//-------------TABLET---------------
+
+@media @tablet {
+  .header-main__link {
+    font-size: 30px;
+    line-height: 40px;    
+  }
 }

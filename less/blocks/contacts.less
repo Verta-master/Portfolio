@@ -1,25 +1,46 @@
 .contacts {
-  width: 100%;
+  padding: 20px;
   background-color: @blue;
   background-image: linear-gradient(45deg, #3695ff, #3695ff 20%, #469dff 20%, #469dff 40%, #4098ff 40%, #4098ff 60%, #3c89fe 60%, #3c89fe 80%, #367bfd 80%, #367bfd);
+}
+
+.contacts__data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .contacts__mail {
   .list__stroke {
     stroke: @light;
   }
+  
+  svg {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .contacts__skype {
   svg {
-    width: 64px;
-    height: 64px;
+    width: 50px;
+    height: 50px;
   }
 }
 
 .contacts__git {
   svg {
-    width: 64px;
-    height: 64px;
+    width: 50px;
+    height: 50px;
   }
+}
+
+.contacts__link {
+  text-decoration: none;
+  color: @light;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
