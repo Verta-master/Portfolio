@@ -45,9 +45,14 @@
   text-align: center;
   color: @blue;
   margin-bottom: 10px;
+  max-width: 280px;
   
   &--light {
     color: @light;
+  }
+  
+  &--light:hover {
+    color: @grey;
   }
 }
 
@@ -64,8 +69,18 @@
     stroke: @blue;
   }
   
-  &--promo .list__stroke {
+  &:hover .list__stroke {
+    stroke: @dark-blue;
+  }
+}
+
+.list__icon--promo {
+  .list__stroke {
     stroke: @light;
+  }
+  
+  &:hover .list__stroke {
+    stroke: @grey;
   }
 }
 
