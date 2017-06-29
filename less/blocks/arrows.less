@@ -3,7 +3,7 @@
   display: none;
 }
 
-//--------------TABLET----------------
+//--------------DEKTOP----------------
 
 @media @desktop {
   .arrow-down,
@@ -11,5 +11,48 @@
     display: block;
     width: 50px;
     height: 50px;
+    cursor: pointer;
+    
+    .arrow-hover {
+      stroke: @blue;
+    }
+    
+    &:hover .arrow-hover {
+      stroke: @dark-blue;
+    }
+    
+    .arrow-hover--light {
+      stroke: @light;
+    }
+    
+    &:hover .arrow-hover--light {
+      stroke: @grey;
+    }
+  }
+  
+  .arrow-up {
+    margin-bottom: 15px;
+    margin-top: 30px;
+  }
+  
+  .arrow-down {
+    margin-top: 15px;
+  }
+  
+  .arrow {
+    display: flex;
+    justify-content: center;
+    
+    &--insideup {
+      position: absolute;
+      top: 0;
+      left: 20px;
+    }
+    
+    &--insidedown {
+      position: absolute;
+      bottom: 0;
+      left: 20px;
+    }
   }
 }

@@ -51,7 +51,40 @@
     line-height: 35px;   
     
     span {
-      display: inline-block;
+      display: block;
     }
+  }
+}
+
+//----------------DESKTOP----------------
+
+@media @desktop {
+  .promo {
+    padding-bottom: 0;
+    height: 100vh;
+  }
+  
+  .promo__title {
+    font-size: 3vh;
+    line-height: 5vh;
+    max-width: 50vw;
+    text-transform: none;
+    margin-left: 20px;
+    
+    span {
+      margin-bottom: 10px;
+    }
+  }
+  
+  .promo__lead {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+  }
+  
+  .promo__photo {
+    margin-right: 0;
   }
 }

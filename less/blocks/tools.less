@@ -10,3 +10,55 @@
     padding-top: 30px;
   }
 }
+
+//----------------DESKTOP----------------
+
+@media @desktop {
+  .tools {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 100vh;
+    
+    .list {
+      margin-top: 40px;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    
+    .list__item {
+      flex-direction: row;
+      width: 40vw;
+    }
+    
+    .list__item:nth-child(2),
+    .list__item:first-child {
+      justify-content: flex-end;
+      
+      .list__icon {
+        order: 2;
+      }
+      
+      .list__block {
+        order: 1;
+      }
+    }
+    
+    .list__item:first-child {
+      .list__block {
+        margin-right: 30px;
+      }
+    }
+    
+    .list__item:nth-child(3),
+    .list__item:last-child {
+      justify-content: flex-start;      
+    }
+    
+    .list__item:nth-child(3) {
+      .list__block {
+        margin-left: 50px;
+      }      
+    }
+  }
+}
