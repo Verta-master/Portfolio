@@ -1,3 +1,74 @@
 .works {
   padding: 20px;
+  background-color: #fff;
+}
+
+.works__preview {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.works__item {
+  padding: 0;
+  margin-bottom: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.works__modal {
+  display: none;
+  position: absolute;
+  width: 280px;
+  padding-bottom: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 15px 5px rgba(0,0,0,0.2);
+  z-index: 5;
+}
+
+.works__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: @light;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  
+  .list__stroke {
+    stroke: @blue;
+  }
+  
+  svg {
+    width: 50px;
+    height: 40px;
+  }
+}
+
+.works__close {
+  font-size: 0;
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  background-image: url(../img/icon-cross.svg);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.works__title {
+  margin: 0;
+  color: @blue;
+}
+
+.works__link {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: @blue;
+  font-weight: bold;
+  margin-bottom: 10px;
 }

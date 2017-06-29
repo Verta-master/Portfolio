@@ -7,8 +7,6 @@
 .contacts__data {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .contacts__mail {
@@ -41,6 +39,21 @@
   color: @light;
   display: flex;
   flex-direction: row;
+  align-items: center;
+}
+
+.contacts__mail,
+.contacts__skype,
+.contacts__git {
+  width: 100%;
+}
+
+.contacts__text {
+  padding-left: 20px;
+}
+
+.contacts__icon {
+  display: flex;
   justify-content: center;
   align-items: center;
 }
