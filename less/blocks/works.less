@@ -120,3 +120,44 @@
   position: static;
 }
 
+//--------------TABLET---------------
+
+@media @tablet {
+  .works {
+    padding-top: 30px;;
+  }
+  
+  .works__preview {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .works__item {
+    max-width: 280px;
+    
+    &:first-child {
+      margin-right: 10px;
+    }
+  }
+  
+  .works__modal {
+    width: 570px;
+  }
+  
+  .works__show-pink,
+  .works__show-sedona,
+  .works__show-take {
+    position: absolute;
+  }
+  
+  .works__show-sedona {
+    transform: translateX(-290px);
+  }
+  
+  .works__show-take {
+    transform: translateX(-145px);
+  }
+}

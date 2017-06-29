@@ -35,6 +35,10 @@
     padding-left: 25px;
     padding-right: 25px;
   }
+  
+  .text {
+    max-width: 280px;
+  }
 }
 
 .list__title {
@@ -46,6 +50,7 @@
   color: @blue;
   margin-bottom: 10px;
   max-width: 280px;
+  box-sizing: border-box;
   
   &--light {
     color: @light;
@@ -86,4 +91,25 @@
 
 .list__revert {
   transform: rotate(90deg);
+}
+
+//-------------TABLET---------------
+
+@media @tablet {
+  .list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  
+  .list__item { 
+    
+    .text {
+      padding-left: 15px;
+      padding-right: 15px;
+      box-sizing: border-box;
+    }
+  }
 }
