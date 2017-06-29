@@ -760,6 +760,9 @@ textarea {
   .tools {
     padding-top: 30px;
   }
+  .tools .list__item {
+    width: 50%;
+  }
   .header-main {
     width: 620px;
   }
