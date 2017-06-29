@@ -902,7 +902,8 @@ textarea {
         align-items: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    max-height: 290px;
+    max-height: 40vh;
+    box-sizing: border-box;
   }
   .tools .list__item {
     -ms-flex-direction: row;
@@ -910,6 +911,7 @@ textarea {
     -ms-flex-pack: justify;
         justify-content: space-between;
     width: 40vw;
+    height: 20vh;
   }
   .tools .list__item .list__title {
     margin-top: 0;
