@@ -902,7 +902,7 @@ textarea {
         align-items: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    max-height: 300px;
+    max-height: 290px;
   }
   .tools .list__item {
     -ms-flex-direction: row;
