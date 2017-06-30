@@ -619,8 +619,7 @@ textarea {
 .title-h2 span {
   display: none;
 }
-.arrow-down,
-.arrow-up {
+.arrow {
   display: none;
 }
 .works {
@@ -850,11 +849,11 @@ textarea {
   .promo {
     padding-bottom: 0;
     height: 100vh;
+    position: relative;
   }
   .promo__title {
     font-size: 3vh;
     line-height: 5vh;
-    max-width: 50vw;
     text-transform: none;
     margin-left: 20px;
   }
@@ -871,6 +870,7 @@ textarea {
     -ms-flex-align: center;
         align-items: center;
     height: 40vh;
+    margin: 0 auto;
   }
   .promo__photo {
     margin-right: 0;
@@ -883,14 +883,19 @@ textarea {
   }
   .inside .text {
     margin-bottom: 1vh;
+    line-height: 2.5vh;
   }
   .inside .title-h2 {
     padding-top: 40px;
+  }
+  .inside .list {
+    margin-top: 10px;
   }
   .tools {
     padding-top: 0;
     padding-bottom: 0;
     height: 100vh;
+    position: relative;
   }
   .tools .list {
     margin-top: 60px;
@@ -902,19 +907,26 @@ textarea {
         align-items: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    max-height: 40vh;
+    height: 40vh;
     box-sizing: border-box;
   }
   .tools .list__item {
     -ms-flex-direction: row;
         flex-direction: row;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
     width: 40vw;
     height: 20vh;
   }
+  .tools .list__item .list__block {
+    -ms-flex-positive: 1;
+        flex-grow: 1;
+  }
   .tools .list__item .list__title {
     margin-top: 0;
+  }
+  .tools .list__item:nth-child(2),
+  .tools .list__item:first-child {
+    -ms-flex-pack: end;
+        justify-content: flex-end;
   }
   .tools .list__item:nth-child(2) .list__icon,
   .tools .list__item:first-child .list__icon {
@@ -926,17 +938,8 @@ textarea {
     -ms-flex-order: 1;
         order: 1;
   }
-  .tools .list__item:first-child .list__block {
-    margin-right: 30px;
-  }
-  .tools .list__item:nth-child(3) .list__block {
-    margin-right: 40px;
-  }
   .header-main {
     width: 100%;
-  }
-  .list {
-    height: 40vh;
   }
   .list__item {
     width: 25%;
@@ -955,9 +958,23 @@ textarea {
     width: 100px;
     height: 100px;
   }
+  .list__link .list__icon {
+    width: 120px;
+    height: 120px;
+  }
+  .list__link .list__title {
+    font-size: 3vh;
+  }
+  .list__link .text {
+    font-size: 2.5vh;
+    line-height: 3vh;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
   .contacts {
     padding-top: 0;
     height: 100vh;
+    position: relative;
   }
   .contacts__data {
     max-width: 500px;
@@ -970,57 +987,50 @@ textarea {
     font-size: 5vh;
     line-height: 5vh;
     margin-bottom: 2vh;
+    padding-top: 100px;
   }
-  .arrow-down,
-  .arrow-up {
+  .arrow {
     display: block;
+    position: absolute;
     width: 50px;
     height: 50px;
     cursor: pointer;
   }
-  .arrow-down .arrow-hover,
-  .arrow-up .arrow-hover {
+  .arrow svg {
+    width: 50px;
+    height: 50px;
+  }
+  .arrow .arrow-hover {
     stroke: #3677fd;
   }
-  .arrow-down:hover .arrow-hover,
-  .arrow-up:hover .arrow-hover {
+  .arrow:hover .arrow-hover {
     stroke: #194277;
   }
-  .arrow-down .arrow-hover--light,
-  .arrow-up .arrow-hover--light {
+  .arrow .arrow-hover--light {
     stroke: #f1f8ff;
   }
-  .arrow-down:hover .arrow-hover--light,
-  .arrow-up:hover .arrow-hover--light {
+  .arrow:hover .arrow-hover--light {
     stroke: #b7c0c9;
   }
-  .arrow-up {
-    margin-bottom: 15px;
-    margin-top: 30px;
+  .arrow--up,
+  .arrow--down {
+    left: 50%;
+    transform: translateX(-25px);
   }
-  .arrow-down {
-    margin-top: 15px;
+  .arrow--up {
+    top: 30px;
   }
-  .arrow {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-        justify-content: center;
-  }
-  .arrow--insideup {
-    position: absolute;
-    top: 0;
-    left: 20px;
-  }
-  .arrow--insidedown {
-    position: absolute;
-    bottom: 0;
-    left: 20px;
+  .arrow--down {
+    bottom: 10px;
   }
   .works {
     padding-top: 0;
     padding-bottom: 0;
     height: 100vh;
+    position: relative;
+  }
+  .works__decsr .title-h2 {
+    padding-top: 20px;
   }
   .works__preview {
     margin-top: 40px;
