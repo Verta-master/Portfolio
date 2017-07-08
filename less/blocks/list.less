@@ -50,6 +50,8 @@
   color: @blue;
   margin-bottom: 10px;
   max-width: 280px;
+  min-width: 0;
+  word-wrap: break-word;
   box-sizing: border-box;
   
   &--light {
@@ -85,7 +87,9 @@
   }
   
   &:hover .list__stroke {
-    stroke: @grey;
+//    stroke: @grey;
+    stroke: @dark-blue;
+    fill: @light;
   }
 }
 

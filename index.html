@@ -14,8 +14,8 @@
     </header>
 
     <main>
-      <section class="promo">
-        <a class="nav-internal" id="screen-promo"></a>
+      <section class="promo" id="screen-promo">
+        <a class="nav-internal"></a>
         <div class="promo__lead">
           <div class="promo__photo">
             <img src="img/card.jpg" alt="My photo" width="150" height="150">
@@ -46,7 +46,10 @@
             <a href="#screen-works" class="list__link">
               <div class="list__icon list__icon--promo">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
-                  <line class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="16" y1="24" x2="38" y2="24"/>
+                  <polygon class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="63,3 63,53 59,61 55,53 55,3 "/>
+                  <polyline class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="14,8 1,8 1,63 45,63 45,8 32,8 "/>
+                  <polygon class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="27,5 27,1 19,1 19,5 15,5 13,13 33,13 31,5"/>
+                  <polyline class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="55,7 51,7 51,17 "/>
                   <line class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="16" y1="34" x2="38" y2="34"/>
                   <line class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="16" y1="44" x2="38" y2="44"/>
                   <line class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="16" y1="54" x2="38" y2="54"/>
@@ -54,10 +57,7 @@
                   <line class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="12" y1="34" x2="8" y2="34"/>
                   <line class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="12" y1="44" x2="8" y2="44"/>
                   <line class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="12" y1="54" x2="8" y2="54"/>
-                  <polyline class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="14,8 1,8 1,63 45,63 45,8 32,8 "/>
-                  <polygon class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="27,5 27,1 19,1 19,5 15,5 13,13 33,13 31,5"/>
-                  <polygon class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="63,3 63,53 59,61 55,53 55,3 "/>
-                  <polyline class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="55,7 51,7 51,17 "/>
+                  <line class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="16" y1="24" x2="38" y2="24"/>
                 </svg>
               </div>
               <h3 class="list__title list__title--light">ПОРТФОЛИО</h3>
@@ -113,7 +113,7 @@
       <section class="inside">
         <a class="nav-internal" id="screen-inside"></a>
 <!--
-        <div class="arrow arrow--insideup">
+        <div class="arrow">
           <a href="#screen-promo" title="Вверх">
             <svg class="arrow-up" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
               <g>
@@ -634,7 +634,22 @@
         </div>
       </section>
     </main>
+    
+    <div class="arrow arrow--back">
+      <a href="#screen-promo" title="Наверх">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+          <g>
+            <circle class="arrow-hover" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="32" cy="32" r="30.999"/>
+          </g>
+          <g>
+            <polyline class="arrow-hover" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="bevel" stroke-miterlimit="10" points="15,40 32,23 
+              49,40"/>
+          </g>
+        </svg>
+      </a>
+    </div>
   </div>
-  <script src="js/script.min.js"></script>
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
