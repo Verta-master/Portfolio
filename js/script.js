@@ -64,6 +64,28 @@ window.addEventListener("keydown", function(event) {
   }
 });
 
+var ber = document.querySelector(".works__berezki");
+var popup4 = document.querySelector(".works__modal--berezki");
+var close4 = popup4.querySelector(".works__header--berezki");
+
+ber.addEventListener("click", function(event) {
+  event.preventDefault();
+  popup4.classList.toggle("works__show-berezki");
+});
+
+close4.addEventListener("click", function(event) {
+  event.preventDefault();
+  popup4.classList.remove("works__show-berezki");
+});
+
+window.addEventListener("keydown", function(event) {
+  if (event.keyCode === 27) {
+    if (popup4.classList.contains("works__show-berezki")) {
+      popup4.classList.remove("works__show-berezki");
+    }
+  }
+});
+
 //scroll to menu anchors
 
 $(document).ready(function(){
