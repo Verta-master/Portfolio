@@ -115,7 +115,8 @@
 
 .works__show-pink,
 .works__show-sedona,
-.works__show-take {
+.works__show-take,
+.works__show-berezki {
   display: block;
   position: static;
 }
@@ -138,8 +139,8 @@
   .works__item {
     max-width: 280px;
     
-    &:first-child {
-      margin-right: 10px;
+    &:nth-child(2n) {
+      margin-left: 10px;
     }
   }
   
@@ -149,17 +150,21 @@
   
   .works__show-pink,
   .works__show-sedona,
-  .works__show-take {
-    position: absolute;
+  .works__show-take,
+  .works__show-berezki {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   
-  .works__show-sedona {
-    transform: translateX(-290px);
-  }
-  
-  .works__show-take {
-    transform: translateX(-145px);
-  }
+//  .works__show-sedona {
+//    transform: translateX(-290px);
+//  }
+//  
+//  .works__show-take {
+//    transform: translateX(-145px);
+//  }
 }
 
 //----------------DESKTOP----------------
@@ -185,14 +190,14 @@
     margin-right: 0;
   }
   
-  .works__show-pink {
-    transform: translateY(-50vh);
-  }
-  
-  .works__show-sedona {
-    transform: translateY(-50vh);
-  }
-  .works__show-take {
-    transform: translate(-50%,-50vh);
-  }
+//  .works__show-pink {
+//    transform: translateY(-50vh);
+//  }
+//  
+//  .works__show-sedona {
+//    transform: translateY(-50vh);
+//  }
+//  .works__show-take {
+//    transform: translate(-50%,-50vh);
+//  }
 }
