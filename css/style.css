@@ -492,6 +492,8 @@ textarea {
   color: #3677fd;
   margin-bottom: 10px;
   max-width: 280px;
+  min-width: 0;
+  word-wrap: break-word;
   box-sizing: border-box;
 }
 .list__title--light {
@@ -522,7 +524,8 @@ textarea {
   stroke: #f1f8ff;
 }
 .list__icon--promo:hover .list__stroke {
-  stroke: #b7c0c9;
+  stroke: #194277;
+  fill: #f1f8ff;
 }
 .list__revert {
   transform: rotate(90deg);
@@ -530,6 +533,8 @@ textarea {
 .text {
   margin-top: 0;
   text-align: center;
+  min-width: 0;
+  word-wrap: break-word;
 }
 .text--hidden {
   display: none;
@@ -1022,6 +1027,16 @@ textarea {
   }
   .arrow--down {
     bottom: 10px;
+  }
+  .arrow--back {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    display: none;
+  }
+  .arrow--back .arrow-hover {
+    stroke: #f1f8ff;
+    fill: #469dff;
   }
   .works {
     padding-top: 0;
