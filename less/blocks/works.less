@@ -1,6 +1,7 @@
 .works {
   padding: 20px;
   background-color: #fff;
+  position: relative;
 }
 
 .works__preview {
@@ -11,7 +12,6 @@
 
 .works__item {
   padding: 0;
-  margin-bottom: 10px;
   cursor: pointer;
   position: relative;
   
@@ -23,8 +23,8 @@
 .works__img {
   position: absolute;
   display: none;
-  width: 280px;
-  height: 170px;
+  width: 240px;
+  height: 145px;
   border-radius: 5px;
   
   .list__stroke {
@@ -116,9 +116,25 @@
 .works__show-pink,
 .works__show-sedona,
 .works__show-take,
-.works__show-berezki {
+.works__show-berezki,
+.works__show-jsb,
+.works__show-creative {
   display: block;
-  position: static;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
+.works__name {
+  color: @blue;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 1.2;
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
 //--------------TABLET---------------
@@ -128,20 +144,8 @@
     padding-top: 30px;;
   }
   
-  .works__preview {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  
   .works__item {
     max-width: 280px;
-    
-    &:nth-child(2n) {
-      margin-left: 10px;
-    }
   }
   
   .works__modal {
@@ -151,20 +155,19 @@
   .works__show-pink,
   .works__show-sedona,
   .works__show-take,
-  .works__show-berezki {
+  .works__show-berezki,
+  .works__show-jsb,
+  .works__show-creative {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
   
-//  .works__show-sedona {
-//    transform: translateX(-290px);
-//  }
-//  
-//  .works__show-take {
-//    transform: translateX(-145px);
-//  }
+  .works__img {
+    width: 250px;
+    height: 152px;
+  }
 }
 
 //----------------DESKTOP----------------
@@ -183,21 +186,10 @@
   
   .works__preview {
     margin-top: 40px;
-    justify-content: space-around;
   }
   
-  .works__item:first-child {
-    margin-right: 0;
+  .works__img {
+    width: 350px;
+    height: 217px;
   }
-  
-//  .works__show-pink {
-//    transform: translateY(-50vh);
-//  }
-//  
-//  .works__show-sedona {
-//    transform: translateY(-50vh);
-//  }
-//  .works__show-take {
-//    transform: translate(-50%,-50vh);
-//  }
 }
