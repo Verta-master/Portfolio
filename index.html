@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta  name="viewport" content="width=device-width,initial-scale=1">
-  <title>Portfolio</title>
+  <title>Verta-Master: Portfolio</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -298,181 +298,140 @@
         <p class="text">Здесь представлены сайты, которые я сверстала.</p>
         <p class="text text--hidden">Кликните на миниатюру, чтобы увидеть подробное описание. Все страницы размещены на GitHub, где вы сможете оценить качество кода.</p>
         <p class="text">Кстати, эта страница тоже разработана мной :)</p>
-        <ul class="works__preview">
-          <li class="works__item">
-            <div class="works__img works__pink" title="Нажмите для просмотра">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
-                <g>
-                  <line class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="12" y1="21" x2="30" y2="21"/>
-                  <line class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="21" y1="12" x2="21" y2="30"/>
-                </g>
-                <g>
-                  <circle class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="21" cy="21" r="20"/>
-                  <line class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="35" y1="35" x2="41" y2="41"/>
-                  <rect class="list__stroke" x="46.257" y="37.065" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 121.9178 50.5)" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="8.485" height="26.87"/>
-                </g>
-              </svg>              
-            </div>
-            <img src="img/pink_280x170.jpg" alt="Adaptive Pink" width="280" height="170">
-            <div class="works__modal works__modal--pink">
-              <div class="works__header works__header--pink">
+        
+        <div class="swiper-container">
+          <ul class="works__preview swiper-wrapper">
+<!--            JSB-->
+            <li class="works__item swiper-slide">
+              <div class="works__img works__jsb" title="Нажмите для просмотра">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
                   <g>
-                    <rect class="list__stroke" x="1" y="11" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="62" height="42"/>
-                    <polyline class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="1,47 24,27 36,39 42,31 63,49 	"/>
-                    <circle class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="51" cy="22" r="5"/>
+                    <line class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="12" y1="21" x2="30" y2="21"/>
+                    <line class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="21" y1="12" x2="21" y2="30"/>
                   </g>
-                </svg>
-                <h3 class="works__title">Моя верстка</h3>
-                <button class="works__close">Закрыть</button>
+                  <g>
+                    <circle class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="21" cy="21" r="20"/>
+                    <line class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="35" y1="35" x2="41" y2="41"/>
+                    <rect class="list__stroke" x="46.257" y="37.065" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 121.9178 50.5)" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="8.485" height="26.87"/>
+                  </g>
+                </svg>              
               </div>
-              <div class="works__decsr">
-                <h2 class="title-h2">Проект "Пинк"</h2>
-                
-                <a href="https://verta-master.github.io/368857-pink/" class="works__link">Ссылка на проект</a>
-                <p class="text">Особенности проекта:</p>
-                <ul class="text-list">
-                  <li class="text-list__item">Адаптивная верстка трех страниц для размеров 320, 660 и 960px</li>
-                  <li class="text-list__item">Использованы флексбоксы и БЭМ-классификация</li>
-                  <li class="text-list__item">Принцип Mobile First</li>
-                  <li class="text-list__item">Retina-ready адаптивная графика и svg</li>
-                  <li class="text-list__item">Мобильное меню на JS</li>
-                  <li class="text-list__item">Минифицированные файлы стилей и скриптов</li>
-                  <li class="text-list__item">Автоматизация Gulp + Less</li>
-                </ul>
-              </div>
-            </div>
-          </li>
-          <li class="works__item">
-            <div class="works__img works__sedona" title="Нажмите для просмотра">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
-                <g>
-                  <line class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="12" y1="21" x2="30" y2="21"/>
-                  <line class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="21" y1="12" x2="21" y2="30"/>
-                </g>
-                <g>
-                  <circle class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="21" cy="21" r="20"/>
-                  <line class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="35" y1="35" x2="41" y2="41"/>
-                  <rect class="list__stroke" x="46.257" y="37.065" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 121.9178 50.5)" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="8.485" height="26.87"/>
-                </g>
-              </svg>            
-            </div>
-            <img src="img/sedona_280x170.jpg" alt="Adaptive Sedona" width="280" height="170">
-            <div class="works__modal works__modal--sedona">
-              <div class="works__header works__header--sedona">
+              <picture>
+                <source media="(min-width: 910px)" srcset="img/jsb.jpg">
+                <img src="img/jsb_280x170.jpg" alt="JSB Internet-shop" width="280" height="170">
+              </picture>
+              <p class="works__name">Интернет-магазин спецтехники</p>
+            </li>
+<!--            Creative Agency-->
+            <li class="works__item swiper-slide">
+              <div class="works__img works__creative" title="Нажмите для просмотра">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
                   <g>
-                    <rect class="list__stroke" x="1" y="11" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="62" height="42"/>
-                    <polyline class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="1,47 24,27 36,39 42,31 63,49 	"/>
-                    <circle class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="51" cy="22" r="5"/>
+                    <line class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="12" y1="21" x2="30" y2="21"/>
+                    <line class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="21" y1="12" x2="21" y2="30"/>
                   </g>
-                </svg>
-                <h3 class="works__title">Моя верстка</h3>
-                <button class="works__close">Закрыть</button>
+                  <g>
+                    <circle class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="21" cy="21" r="20"/>
+                    <line class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="35" y1="35" x2="41" y2="41"/>
+                    <rect class="list__stroke" x="46.257" y="37.065" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 121.9178 50.5)" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="8.485" height="26.87"/>
+                  </g>
+                </svg>              
               </div>
-              <div class="works__decsr">
-                <h2 class="title-h2">Проект "Седона"</h2>
-                
-                <a href="https://verta-master.github.io/368857-sedona/" class="works__link">Ссылка на проект</a>
-                <p class="text">Особенности проекта:</p>
-                <ul class="text-list">
-                  <li class="text-list__item">Адаптивная верстка трех страниц для размеров 320, 728 и 1200px</li>
-                  <li class="text-list__item">Использованы флексбоксы и БЭМ-классификация</li>
-                  <li class="text-list__item">Принцип Mobile First</li>
-                  <li class="text-list__item">Retina-ready адаптивная графика и svg</li>
-                  <li class="text-list__item">Мобильное меню на JS</li>
-                  <li class="text-list__item">Минифицированные файлы стилей и скриптов</li>
-                  <li class="text-list__item">Автоматизация Gulp + Less</li>
-                </ul>
-              </div>
-            </div>
-          </li>
-          <li class="works__item">
-            <div class="works__img works__take" title="Нажмите для просмотра">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
-                <g>
-                  <line class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="12" y1="21" x2="30" y2="21"/>
-                  <line class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="21" y1="12" x2="21" y2="30"/>
-                </g>
-                <g>
-                  <circle class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="21" cy="21" r="20"/>
-                  <line class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="35" y1="35" x2="41" y2="41"/>
-                  <rect class="list__stroke" x="46.257" y="37.065" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 121.9178 50.5)" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="8.485" height="26.87"/>
-                </g>
-              </svg>
-            </div>
-            <img src="img/take_280x170.jpg" alt="Landing-page Take" width="280" height="170">
-            <div class="works__modal works__modal--take">
-              <div class="works__header works__header--take">
+              <picture>
+                <source media="(min-width: 910px)" srcset="img/CreativeAgency.jpg">
+                <img src="img/CreativeAgency_280x170.jpg" alt="Company website" width="280" height="170">
+              </picture>
+              <p class="works__name">Сайт-визитка агентства</p>
+            </li>
+<!--            Pink-->
+            <li class="works__item swiper-slide">
+              <div class="works__img works__pink" title="Нажмите для просмотра">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
                   <g>
-                    <rect class="list__stroke" x="1" y="11" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="62" height="42"/>
-                    <polyline class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="1,47 24,27 36,39 42,31 63,49 	"/>
-                    <circle class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="51" cy="22" r="5"/>
+                    <line class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="12" y1="21" x2="30" y2="21"/>
+                    <line class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="21" y1="12" x2="21" y2="30"/>
                   </g>
-                </svg>
-                <h3 class="works__title">Моя верстка</h3>
-                <button class="works__close">Закрыть</button>
+                  <g>
+                    <circle class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="21" cy="21" r="20"/>
+                    <line class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="35" y1="35" x2="41" y2="41"/>
+                    <rect class="list__stroke" x="46.257" y="37.065" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 121.9178 50.5)" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="8.485" height="26.87"/>
+                  </g>
+                </svg>              
               </div>
-              <div class="works__decsr">
-                <h2 class="title-h2">Лендинг "Take"</h2>
-                
-                <a href="https://verta-master.github.io/Landing-Take/" class="works__link">Ссылка на проект</a>
-                <p class="text">Особенности проекта:</p>
-                <ul class="text-list">
-                  <li class="text-list__item">Одностраничный лендинг</li>
-                  <li class="text-list__item">Использованы флоаты для сетки</li>
-                  <li class="text-list__item">Абсолютно резиновая верстка, включая шрифты</li>
-                </ul>
-              </div>
-            </div>
-          </li>
-          <li class="works__item">
-            <div class="works__img works__berezki" title="Нажмите для просмотра">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
-                <g>
-                  <line class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="12" y1="21" x2="30" y2="21"/>
-                  <line class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="21" y1="12" x2="21" y2="30"/>
-                </g>
-                <g>
-                  <circle class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="21" cy="21" r="20"/>
-                  <line class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="35" y1="35" x2="41" y2="41"/>
-                  <rect class="list__stroke" x="46.257" y="37.065" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 121.9178 50.5)" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="8.485" height="26.87"/>
-                </g>
-              </svg>
-            </div>
-            <img src="img/berezki_280x170.jpg" alt="Landing-page Berezki" width="280" height="170">
-            <div class="works__modal works__modal--berezki">
-              <div class="works__header works__header--berezki">
+              <picture>
+                <source media="(min-width: 910px)" srcset="img/pink.jpg">
+                <img src="img/pink_280x170.jpg" alt="Adaptive Pink" width="280" height="170">
+              </picture>
+              <p class="works__name">Сайт мобильного приложения "Пинк"</p>
+            </li>
+<!--            Sedona-->
+            <li class="works__item swiper-slide">
+              <div class="works__img works__sedona" title="Нажмите для просмотра">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
                   <g>
-                    <rect class="list__stroke" x="1" y="11" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="62" height="42"/>
-                    <polyline class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="1,47 24,27 36,39 42,31 63,49 	"/>
-                    <circle class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="51" cy="22" r="5"/>
+                    <line class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="12" y1="21" x2="30" y2="21"/>
+                    <line class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="21" y1="12" x2="21" y2="30"/>
+                  </g>
+                  <g>
+                    <circle class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="21" cy="21" r="20"/>
+                    <line class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="35" y1="35" x2="41" y2="41"/>
+                    <rect class="list__stroke" x="46.257" y="37.065" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 121.9178 50.5)" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="8.485" height="26.87"/>
+                  </g>
+                </svg>            
+              </div>
+              <picture>
+                <source media="(min-width: 910px)" srcset="img/sedona.jpg">
+                <img src="img/sedona_280x170.jpg" alt="Adaptive Sedona" width="280" height="170">
+              </picture>
+              <p class="works__name">Сайт туристического городка "Седона"</p>
+            </li>
+<!--            Berezki-->
+            <li class="works__item swiper-slide">
+              <div class="works__img works__berezki" title="Нажмите для просмотра">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+                  <g>
+                    <line class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="12" y1="21" x2="30" y2="21"/>
+                    <line class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="21" y1="12" x2="21" y2="30"/>
+                  </g>
+                  <g>
+                    <circle class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="21" cy="21" r="20"/>
+                    <line class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="35" y1="35" x2="41" y2="41"/>
+                    <rect class="list__stroke" x="46.257" y="37.065" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 121.9178 50.5)" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="8.485" height="26.87"/>
                   </g>
                 </svg>
-                <h3 class="works__title">Моя верстка</h3>
-                <button class="works__close">Закрыть</button>
               </div>
-              <div class="works__decsr">
-                <h2 class="title-h2">Лендинг санатория "Березки"</h2>
-                
-                <a href="https://verta-master.github.io/Landing-Berezki/" class="works__link">Ссылка на проект</a>
-                <p class="text">Особенности проекта:</p>
-                <ul class="text-list">
-                  <li class="text-list__item">Очень длинный одностраничный лендинг</li>
-                  <li class="text-list__item">Адаптивная верстка для размеров 320 и 960px</li>
-                  <li class="text-list__item">Использованы флексбоксы и БЭМ-классификация</li>
-                  <li class="text-list__item">Принцип Mobile First</li>
-                  <li class="text-list__item">Мобильное меню и всплывающие окна на JS</li>
-                  <li class="text-list__item">Слайдеры на css и jQuery</li>
-                  <li class="text-list__item">Минифицированные файлы стилей и скриптов</li>
-                  <li class="text-list__item">Автоматизация Gulp + Less</li>
-                </ul>
+              <picture>
+                <source media="(min-width: 910px)" srcset="img/Landing-Berezki.jpg">
+                <img src="img/berezki_280x170.jpg" alt="Landing-page Berezki" width="280" height="170">
+              </picture>
+              <p class="works__name">Лендинг санатория "Берёзки"</p>
+            </li>
+<!--            Take-->
+            <li class="works__item swiper-slide">
+              <div class="works__img works__take" title="Нажмите для просмотра">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+                  <g>
+                    <line class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="12" y1="21" x2="30" y2="21"/>
+                    <line class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="21" y1="12" x2="21" y2="30"/>
+                  </g>
+                  <g>
+                    <circle class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="21" cy="21" r="20"/>
+                    <line class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="35" y1="35" x2="41" y2="41"/>
+                    <rect class="list__stroke" x="46.257" y="37.065" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 121.9178 50.5)" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="8.485" height="26.87"/>
+                  </g>
+                </svg>
               </div>
-            </div>
-          </li>
-        </ul>
+              <picture>
+                <source media="(min-width: 910px)" srcset="img/take.jpg">
+                <img src="img/take_280x170.jpg" alt="Landing-page Take" width="280" height="170">
+              </picture>
+              <p class="works__name">Лендинг "Take"</p>
+            </li>
+          </ul>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+        <div class="swiper-pagination"></div>
         <div class="arrow arrow--down">
           <a href="#screen-tools" title="Далее">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
@@ -486,6 +445,173 @@
             </svg>
           </a>
         </div>
+        
+        <div class="works__modal works__modal--jsb">
+          <div class="works__header works__header--jsb">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+              <g>
+                <rect class="list__stroke" x="1" y="11" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="62" height="42"/>
+                <polyline class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="1,47 24,27 36,39 42,31 63,49 	"/>
+                <circle class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="51" cy="22" r="5"/>
+              </g>
+            </svg>
+            <h3 class="works__title">Моя верстка</h3>
+            <button class="works__close">Закрыть</button>
+          </div>
+          <div class="works__decsr">
+            <h2 class="title-h2">Интернет-магазин спецтехники</h2>
+            <a href="https://verta-master.github.io/spec-technics/" class="works__link">Ссылка на проект</a>
+            <p class="text">Особенности проекта:</p>
+            <ul class="text-list">
+              <li class="text-list__item">Адаптивная верстка 6 страниц для размеров 320, 480, 768, 1000 и 1400px</li>
+              <li class="text-list__item">Использованы флексбоксы и БЭМ-классификация</li>
+              <li class="text-list__item">Принцип Mobile First</li>
+              <li class="text-list__item">Реализация модальных окон и слайдеров на JS/jQuery</li>
+              <li class="text-list__item">Мобильное меню на JS</li>
+              <li class="text-list__item">Минифицированные файлы стилей и скриптов</li>
+              <li class="text-list__item">Автоматизация Gulp + Less</li>
+            </ul>
+          </div>
+        </div>
+        <div class="works__modal works__modal--creative">
+          <div class="works__header works__header--creative">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+              <g>
+                <rect class="list__stroke" x="1" y="11" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="62" height="42"/>
+                <polyline class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="1,47 24,27 36,39 42,31 63,49 	"/>
+                <circle class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="51" cy="22" r="5"/>
+              </g>
+            </svg>
+            <h3 class="works__title">Моя верстка</h3>
+            <button class="works__close">Закрыть</button>
+          </div>
+          <div class="works__decsr">
+            <h2 class="title-h2">Сайт-визитка агентства</h2>
+            <a href="https://verta-master.github.io/CreativeAgency/" class="works__link">Ссылка на проект</a>
+            <p class="text">Особенности проекта:</p>
+            <ul class="text-list">
+              <li class="text-list__item">Адаптивно-резиновая верстка 5 страниц для брейкпоинтов на 320, 768 и 1280px, но прекрасно смотрится и на промежуточных размерах</li>
+              <li class="text-list__item">Использованы флексбоксы и БЭМ-классификация</li>
+              <li class="text-list__item">Принцип Desktop First</li>
+              <li class="text-list__item">css-фильтр в резиновом блоке выбора картинок, совмещенный с jQuery-лайтбоксом</li>
+              <li class="text-list__item">css-аккордеон</li>
+              <li class="text-list__item">Реализация слайдеров на jQuery</li>
+              <li class="text-list__item">Мобильное меню на JS</li>
+              <li class="text-list__item">Минифицированные файлы стилей</li>
+              <li class="text-list__item">Автоматизация Gulp + Less</li>
+            </ul>
+          </div>
+        </div>
+        <div class="works__modal works__modal--pink">
+          <div class="works__header works__header--pink">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+              <g>
+                <rect class="list__stroke" x="1" y="11" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="62" height="42"/>
+                <polyline class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="1,47 24,27 36,39 42,31 63,49 	"/>
+                <circle class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="51" cy="22" r="5"/>
+              </g>
+            </svg>
+            <h3 class="works__title">Моя верстка</h3>
+            <button class="works__close">Закрыть</button>
+          </div>
+          <div class="works__decsr">
+            <h2 class="title-h2">Проект "Пинк"</h2>
+
+            <a href="https://verta-master.github.io/368857-pink/" class="works__link">Ссылка на проект</a>
+            <p class="text">Особенности проекта:</p>
+            <ul class="text-list">
+              <li class="text-list__item">Адаптивная верстка трех страниц для размеров 320, 660 и 960px</li>
+              <li class="text-list__item">Использованы флексбоксы и БЭМ-классификация</li>
+              <li class="text-list__item">Принцип Mobile First</li>
+              <li class="text-list__item">Retina-ready адаптивная графика и svg</li>
+              <li class="text-list__item">Мобильное меню на JS</li>
+              <li class="text-list__item">Минифицированные файлы стилей и скриптов</li>
+              <li class="text-list__item">Автоматизация Gulp + Less</li>
+            </ul>
+          </div>
+        </div>
+        <div class="works__modal works__modal--sedona">
+          <div class="works__header works__header--sedona">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+              <g>
+                <rect class="list__stroke" x="1" y="11" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="62" height="42"/>
+                <polyline class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="1,47 24,27 36,39 42,31 63,49 	"/>
+                <circle class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="51" cy="22" r="5"/>
+              </g>
+            </svg>
+            <h3 class="works__title">Моя верстка</h3>
+            <button class="works__close">Закрыть</button>
+          </div>
+          <div class="works__decsr">
+            <h2 class="title-h2">Проект "Седона"</h2>
+
+            <a href="https://verta-master.github.io/368857-sedona/" class="works__link">Ссылка на проект</a>
+            <p class="text">Особенности проекта:</p>
+            <ul class="text-list">
+              <li class="text-list__item">Адаптивная верстка трех страниц для размеров 320, 728 и 1200px</li>
+              <li class="text-list__item">Использованы флексбоксы и БЭМ-классификация</li>
+              <li class="text-list__item">Принцип Mobile First</li>
+              <li class="text-list__item">Retina-ready адаптивная графика и svg</li>
+              <li class="text-list__item">Мобильное меню на JS</li>
+              <li class="text-list__item">Минифицированные файлы стилей и скриптов</li>
+              <li class="text-list__item">Автоматизация Gulp + Less</li>
+            </ul>
+          </div>
+        </div>
+        <div class="works__modal works__modal--take">
+          <div class="works__header works__header--take">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+              <g>
+                <rect class="list__stroke" x="1" y="11" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="62" height="42"/>
+                <polyline class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="1,47 24,27 36,39 42,31 63,49 	"/>
+                <circle class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="51" cy="22" r="5"/>
+              </g>
+            </svg>
+            <h3 class="works__title">Моя верстка</h3>
+            <button class="works__close">Закрыть</button>
+          </div>
+          <div class="works__decsr">
+            <h2 class="title-h2">Лендинг "Take"</h2>
+
+            <a href="https://verta-master.github.io/Landing-Take/" class="works__link">Ссылка на проект</a>
+            <p class="text">Особенности проекта:</p>
+            <ul class="text-list">
+              <li class="text-list__item">Одностраничный лендинг</li>
+              <li class="text-list__item">Использованы флоаты для сетки</li>
+              <li class="text-list__item">Абсолютно резиновая верстка, включая шрифты</li>
+            </ul>
+          </div>
+        </div>
+        <div class="works__modal works__modal--berezki">
+          <div class="works__header works__header--berezki">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+              <g>
+                <rect class="list__stroke" x="1" y="11" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="62" height="42"/>
+                <polyline class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="1,47 24,27 36,39 42,31 63,49 	"/>
+                <circle class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="51" cy="22" r="5"/>
+              </g>
+            </svg>
+            <h3 class="works__title">Моя верстка</h3>
+            <button class="works__close">Закрыть</button>
+          </div>
+          <div class="works__decsr">
+            <h2 class="title-h2">Лендинг санатория "Березки"</h2>
+
+            <a href="https://verta-master.github.io/Landing-Berezki/" class="works__link">Ссылка на проект</a>
+            <p class="text">Особенности проекта:</p>
+            <ul class="text-list">
+              <li class="text-list__item">Очень длинный одностраничный лендинг</li>
+              <li class="text-list__item">Адаптивная верстка для размеров 320 и 960px</li>
+              <li class="text-list__item">Использованы флексбоксы и БЭМ-классификация</li>
+              <li class="text-list__item">Принцип Mobile First</li>
+              <li class="text-list__item">Мобильное меню и всплывающие окна на JS</li>
+              <li class="text-list__item">Слайдеры на css и jQuery</li>
+              <li class="text-list__item">Минифицированные файлы стилей и скриптов</li>
+              <li class="text-list__item">Автоматизация Gulp + Less</li>
+            </ul>
+          </div>
+        </div>
+
       </section>
 
       <section class="tools">
@@ -517,7 +643,7 @@
             </div>
             <div class="list__block">
               <h3 class="list__title">РАЗРАБОТКА САЙТОВ</h3>
-              <p class="text">HTML 5.0, CSS 3.0, JavaScript</p>
+              <p class="text">HTML 5.0, CSS 3.0, JavaScript, jQuery</p>
             </div>
           </li>
           <li class="list__item">
@@ -569,7 +695,7 @@
             </div>
             <div class="list__block">
               <h3 class="list__title">ДИЗАЙН</h3>
-              <p class="text">Adobe Photoshop, CorelDraw, Adobe Illustrator</p>
+              <p class="text">Adobe Photoshop, CorelDraw, Adobe Illustrator, Adobe InDesign</p>
             </div>
           </li>
         </ul>
@@ -694,7 +820,20 @@
       </a>
     </div>
   </div>
+  
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      pagination: '.swiper-pagination',
+      paginationClickable: true,
+      nextButton: '.swiper-button-next',
+      prevButton: '.swiper-button-prev',
+      spaceBetween: 25,
+      slidesPerView: 'auto',
+      freeMode: true
+    });
+    </script>
 </body>
 </html>
