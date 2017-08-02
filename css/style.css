@@ -5,6 +5,7 @@ body {
   font-weight: normal;
   color: #5a5a5a;
   background-color: #f2f2f2;
+  overflow-x: hidden;
 }
 img {
   max-width: 100%;
@@ -634,6 +635,13 @@ textarea {
 }
 .arrow {
   display: none;
+}
+.arrow--back {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  opacity: 0.5;
+  transform: scale(0.75);
 }
 .works {
   padding: 20px;
@@ -1311,10 +1319,11 @@ button.swiper-pagination-bullet {
     position: relative;
   }
   .promo__title {
-    font-size: 3vh;
-    line-height: 5vh;
+    font-size: 24px;
+    line-height: 1.4;
     text-transform: none;
     margin-left: 20px;
+    max-width: 720px;
   }
   .promo__title span {
     margin-bottom: 10px;
@@ -1348,7 +1357,7 @@ button.swiper-pagination-bullet {
     padding-top: 40px;
   }
   .inside .list {
-    margin-top: 10px;
+    margin-top: 4vh;
   }
   .tools {
     padding-top: 0;
@@ -1409,6 +1418,12 @@ button.swiper-pagination-bullet {
     padding-left: 0;
     padding-right: 0;
   }
+  .list__block .text {
+    max-width: 100%;
+  }
+  .list__block .list__title {
+    max-width: 100%;
+  }
   .list__title {
     font-size: 2.5vh;
     line-height: 3vh;
@@ -1437,7 +1452,7 @@ button.swiper-pagination-bullet {
   }
   .contacts__data {
     max-width: 500px;
-    margin-top: 60px;
+    margin-top: 10vh;
   }
   .contacts__text {
     font-size: 20px;
@@ -1487,6 +1502,8 @@ button.swiper-pagination-bullet {
     right: 0;
     bottom: 0;
     display: none;
+    opacity: 1;
+    transform: scale(1);
   }
   .arrow--back .arrow-hover {
     stroke: #f1f8ff;
@@ -1514,5 +1531,9 @@ button.swiper-pagination-bullet {
   picture img {
     width: 350px;
     height: auto;
+  }
+  .swiper-container {
+    max-width: 1140px;
+    margin-top: 7vh;
   }
 }
