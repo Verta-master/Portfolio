@@ -2,6 +2,14 @@
   display: none;
 }
 
+.arrow--back {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  opacity: 0.5;
+  transform: scale(0.75);
+}
+
 //--------------DEKTOP----------------
 
 @media @desktop {
@@ -52,6 +60,8 @@
       right: 0;
       bottom: 0;
       display: none;
+      opacity: 1;
+      transform: scale(1);
       
       .arrow-hover {
         stroke: @light;
