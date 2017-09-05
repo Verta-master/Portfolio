@@ -130,6 +130,50 @@ window.addEventListener("keydown", function(event) {
   }
 });
 
+var auto = document.querySelector(".works__auto");
+var popup7 = document.querySelector(".works__modal--auto");
+var close7 = popup7.querySelector(".works__header--auto");
+
+auto.addEventListener("click", function(event) {
+  event.preventDefault();
+  popup7.classList.toggle("works__show-auto");
+});
+
+close7.addEventListener("click", function(event) {
+  event.preventDefault();
+  popup7.classList.remove("works__show-auto");
+});
+
+window.addEventListener("keydown", function(event) {
+  if (event.keyCode === 27) {
+    if (popup7.classList.contains("works__show-auto")) {
+      popup7.classList.remove("works__show-auto");
+    }
+  }
+});
+
+var promo = document.querySelector(".works__promo");
+var popup8 = document.querySelector(".works__modal--promo");
+var close8 = popup8.querySelector(".works__header--promo");
+
+promo.addEventListener("click", function(event) {
+  event.preventDefault();
+  popup8.classList.toggle("works__show-promo");
+});
+
+close8.addEventListener("click", function(event) {
+  event.preventDefault();
+  popup8.classList.remove("works__show-promo");
+});
+
+window.addEventListener("keydown", function(event) {
+  if (event.keyCode === 27) {
+    if (popup8.classList.contains("works__show-promo")) {
+      popup8.classList.remove("works__show-promo");
+    }
+  }
+});
+
 //scroll to menu anchors
 
 $(document).ready(function(){
