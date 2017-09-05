@@ -748,6 +748,8 @@ textarea {
 .works__link:visited {
   color: #194277;
 }
+.works__show-auto,
+.works__show-promo,
 .works__show-pink,
 .works__show-sedona,
 .works__show-take,
@@ -1290,6 +1292,8 @@ button.swiper-pagination-bullet {
   .works__modal {
     width: 570px;
   }
+  .works__show-auto,
+  .works__show-promo,
   .works__show-pink,
   .works__show-sedona,
   .works__show-take,
