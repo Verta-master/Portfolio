@@ -163,10 +163,15 @@
       <line x1="35" y1="35" x2="41" y2="41"/>
       <rect x="46.257" y="37.065" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 121.9178 50.5)" width="8.485" height="26.87"/>
     </symbol>
+    <symbol id="icon-pic">
+      <rect x="1" y="11" width="62" height="42"/>
+      <polyline points="1,47 24,27 36,39 42,31 63,49 	"/>
+      <circle cx="51" cy="22" r="5"/>
+    </symbol>
   </svg>
 
   <div class="wrap-main">
-    <header class="header-main">
+    <header class="header-main compensate-for-scrollbar">
       <a class="header-main__link" href="#screen-contacts">ЗАКАЗАТь ВерсткУ сайтА</a>
     </header>
 
@@ -333,96 +338,50 @@
         </div>
         <h2 class="title-h2">МОИ РАБОТЫ</h2>
         <p class="text">Здесь представлены сайты, которые я сверстала.</p>
-        <p class="text text--hidden">Кликните на миниатюру, чтобы увидеть подробное описание. Все страницы размещены на GitHub, где вы сможете оценить качество кода.</p>
+        <p class="text text--hidden">Кликните на раздел, чтобы увидеть подробное описание проектов. Все страницы размещены на GitHub, где вы сможете оценить качество кода.</p>
         <p class="text">Кстати, эта страница тоже разработана мной :)</p>
-
-        <div class="swiper-container">
-          <ul class="works__preview swiper-wrapper">
-<!--            JSB-->
-            <li class="works__item swiper-slide">
-              <div class="works__img works__jsb" title="Нажмите для просмотра">
-                <svg x="0" y="0" width="64" height="64" viewBox="0 0 64 64">
-                  <use href="#icon-zoom"></use>
-                </svg>              
-              </div>
-              <img src="img/jsb.jpg" alt="JSB Internet-shop" width="350" height="217">
-              <p class="works__name">Интернет-магазин спецтехники</p>
-            </li>
-<!--            Autoservice-->
-            <li class="works__item swiper-slide">
-              <div class="works__img works__auto" title="Нажмите для просмотра">
-                <svg x="0" y="0" width="64" height="64" viewBox="0 0 64 64">
-                  <use href="#icon-zoom"></use>
-                </svg>             
-              </div>
-              <img src="img/autoservice_350x217.jpg" alt="Autoservice" width="350" height="217">
-              <p class="works__name">Сайт автосервиса</p>
-            </li>
-<!--            Creative Agency-->
-            <li class="works__item swiper-slide">
-              <div class="works__img works__creative" title="Нажмите для просмотра">
-                <svg x="0" y="0" width="64" height="64" viewBox="0 0 64 64">
-                  <use href="#icon-zoom"></use>
-                </svg>             
-              </div>
-              <img src="img/CreativeAgency.jpg" alt="Company website" width="350" height="217">
-              <p class="works__name">Сайт-визитка агентства</p>
-            </li>
-<!--            Promo-->
-            <li class="works__item swiper-slide">
-              <div class="works__img works__promo" title="Нажмите для просмотра">
-                <svg x="0" y="0" width="64" height="64" viewBox="0 0 64 64">
-                  <use href="#icon-zoom"></use>
-                </svg>             
-              </div>
-              <img src="img/promo_350x217.jpg" alt="Autoservice" width="350" height="217">
-              <p class="works__name">Промо-лендинг</p>
-            </li>
-<!--            Pink-->
-            <li class="works__item swiper-slide">
-              <div class="works__img works__pink" title="Нажмите для просмотра">
-                <svg x="0" y="0" width="64" height="64" viewBox="0 0 64 64">
-                  <use href="#icon-zoom"></use>
-                </svg>             
-              </div>
-              <img src="img/pink.jpg" alt="Adaptive Pink" width="350" height="217">
-              <p class="works__name">Сайт мобильного приложения "Пинк"</p>
-            </li>
-<!--            Sedona-->
-            <li class="works__item swiper-slide">
-              <div class="works__img works__sedona" title="Нажмите для просмотра">
-                <svg x="0" y="0" width="64" height="64" viewBox="0 0 64 64">
-                  <use href="#icon-zoom"></use>
-                </svg>           
-              </div>
-              <img src="img/sedona.jpg" alt="Adaptive Sedona" width="350" height="217">
-              <p class="works__name">Сайт туристического городка "Седона"</p>
-            </li>
-<!--            Berezki-->
-            <li class="works__item swiper-slide">
-              <div class="works__img works__berezki" title="Нажмите для просмотра">
-                <svg x="0" y="0" width="64" height="64" viewBox="0 0 64 64">
-                  <use href="#icon-zoom"></use>
-                </svg>
-              </div>
-              <img src="img/Landing-Berezki.jpg" alt="Landing-page Berezki" width="350" height="217">
-              <p class="works__name">Лендинг санатория "Берёзки"</p>
-            </li>
-<!--            Take-->
-            <li class="works__item swiper-slide">
-              <div class="works__img works__take" title="Нажмите для просмотра">
-                <svg x="0" y="0" width="64" height="64" viewBox="0 0 64 64">
-                  <use href="#icon-zoom"></use>
-                </svg>
-              </div>
-              <img src="img/take.jpg" alt="Landing-page Take" width="350" height="217">
-              <p class="works__name">Лендинг "Take"</p>
-            </li>
-          </ul>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-        </div>
-        <div class="swiper-pagination"></div>
+        
+        <ul class="works__preview">
+          <li class="works__item">
+            <a data-src="#shops" href="javascript:;" data-fancybox="group-1">
+              <p class="works__name">Интернет-магазины</p>
+              <figure class="works__figure">
+                <div class="works__img works__jsb" title="Нажмите для просмотра">
+                  <svg x="0" y="0" width="64" height="64" viewBox="0 0 64 64">
+                    <use href="#icon-zoom"></use>
+                  </svg>              
+                </div>
+                <img class="works__section" src="img/jsb.jpg" alt="Internet-shops" width="350" height="217">
+              </figure>
+            </a>
+          </li>
+          <li class="works__item">
+            <a data-src="#cards" href="javascript:;" data-fancybox="group-2">
+              <p class="works__name">Сайты-визитки</p>
+              <figure class="works__figure">
+                <div class="works__img works__jsb" title="Нажмите для просмотра">
+                  <svg x="0" y="0" width="64" height="64" viewBox="0 0 64 64">
+                    <use href="#icon-zoom"></use>
+                  </svg>              
+                </div>
+                <img class="works__section" src="img/CreativeAgency.jpg" alt="Company website" width="350" height="217">
+              </figure>
+            </a>
+          </li>
+          <li class="works__item">
+            <a data-src="#landings" href="javascript:;" data-fancybox="group-3">
+              <p class="works__name">Лендинги</p>
+              <figure class="works__figure">
+                <div class="works__img works__jsb" title="Нажмите для просмотра">
+                  <svg x="0" y="0" width="64" height="64" viewBox="0 0 64 64">
+                    <use href="#icon-zoom"></use>
+                  </svg>              
+                </div>
+                <img class="works__section" src="img/promo_350x217.jpg" alt="Landing pages" width="350" height="217">
+              </figure>
+            </a>
+          </li>
+        </ul>
         <div class="arrow arrow--down">
           <a href="#screen-tools" title="Далее">
             <svg class="arrow-hover" x="0" y="0" width="64" height="64" viewBox="0 0 64 64">
@@ -431,225 +390,311 @@
           </a>
         </div>
 
-        <div class="works__modal works__modal--jsb">
-          <div class="works__header works__header--jsb">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
-              <g>
-                <rect class="list__stroke" x="1" y="11" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="62" height="42"/>
-                <polyline class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="1,47 24,27 36,39 42,31 63,49 	"/>
-                <circle class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="51" cy="22" r="5"/>
-              </g>
-            </svg>
-            <h3 class="works__title">Моя верстка</h3>
-            <button class="works__close">Закрыть</button>
+<!--  Internet-shops     -->
+        <div style="display: none;">
+          <!-- JSB-->
+          <div class="works__show" id="shops">
+            <div class="works__header">
+              <svg class="works__svg" x="0" y="0" width="64" height="64" viewBox="0 0 64 64">
+                <use href="#icon-pic"></use>
+              </svg>
+              <h3 class="works__title">Моя верстка</h3>
+            </div>
+            <div class="works__about">
+              <h2 class="title-h2">Интернет-магазин спецтехники</h2>
+              <a href="https://verta-master.github.io/spec-technics/" class="works__link">Ссылка на верстку</a>
+              <a href="https://www.shinajcb.ru/" class="works__link">Ссылка на работающий сайт</a>
+              <img class="works__pic" src="img/jsb.jpg" alt="Интернет-магазин спецтехники" width="350" height="217">
+              <p class="text"><b>Особенности проекта:</b></p>
+              <ul class="text-list">
+                <li class="text-list__item">Адаптивная верстка 6 страниц для размеров 320, 480, 768, 1000 и 1400px</li>
+                <li class="text-list__item">Использованы флексбоксы и БЭМ</li>
+                <li class="text-list__item">Принцип Mobile First</li>
+                <li class="text-list__item">Реализация модальных окон и слайдеров на JS/jQuery</li>
+                <li class="text-list__item">Мобильное меню на JS</li>
+                <li class="text-list__item">Минифицированные файлы стилей и скриптов</li>
+                <li class="text-list__item">Автоматизация Gulp + Less</li>
+              </ul>
+            </div>
           </div>
-          <div class="works__decsr">
-            <h2 class="title-h2">Интернет-магазин спецтехники</h2>
-            <a href="https://verta-master.github.io/spec-technics/" class="works__link">Ссылка на проект</a>
-            <p class="text">Особенности проекта:</p>
-            <ul class="text-list">
-              <li class="text-list__item">Адаптивная верстка 6 страниц для размеров 320, 480, 768, 1000 и 1400px</li>
-              <li class="text-list__item">Использованы флексбоксы и БЭМ-классификация</li>
-              <li class="text-list__item">Принцип Mobile First</li>
-              <li class="text-list__item">Реализация модальных окон и слайдеров на JS/jQuery</li>
-              <li class="text-list__item">Мобильное меню на JS</li>
-              <li class="text-list__item">Минифицированные файлы стилей и скриптов</li>
-              <li class="text-list__item">Автоматизация Gulp + Less</li>
-            </ul>
+          <!-- Stoves    -->
+          <div class="works__show" data-fancybox="group-1">
+            <div class="works__header">
+              <svg class="works__svg" x="0" y="0" width="64" height="64" viewBox="0 0 64 64">
+                <use href="#icon-pic"></use>
+              </svg>
+              <h3 class="works__title">Моя верстка</h3>
+            </div>
+            <div class="works__about">
+              <h2 class="title-h2">Интернет-магазин каминов и печей</h2>
+              <a href="https://verta-master.github.io/stove/" class="works__link">Ссылка на верстку</a>
+              <a href="http://pechnoy-mir.ru" class="works__link">Ссылка на работающий сайт</a>
+              <img class="works__pic" src="img/stove_350x217.jpg" alt="Интернет-магазин каминов и печей" width="350" height="217">
+              <p class="text"><b>Особенности проекта:</b></p>
+              <ul class="text-list">
+                <li class="text-list__item">Адаптивная верстка 10 страниц для размеров 320, 768 и 1230px</li>
+                <li class="text-list__item">Использованы флексбоксы и БЭМ</li>
+                <li class="text-list__item">Desktop First</li>
+                <li class="text-list__item">Реализация модальных окон и слайдеров на JS/jQuery</li>
+                <li class="text-list__item">Сложный сайдбар и анимированное меню</li>
+                <li class="text-list__item">Минифицированные файлы стилей и скриптов</li>
+                <li class="text-list__item">Автоматизация Gulp + Less</li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="works__modal works__modal--auto">
-          <div class="works__header works__header--auto">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
-              <g>
-                <rect class="list__stroke" x="1" y="11" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="62" height="42"/>
-                <polyline class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="1,47 24,27 36,39 42,31 63,49 	"/>
-                <circle class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="51" cy="22" r="5"/>
-              </g>
-            </svg>
-            <h3 class="works__title">Моя верстка</h3>
-            <button class="works__close">Закрыть</button>
-          </div>
-          <div class="works__decsr">
-            <h2 class="title-h2">Сайт автосервиса</h2>
-            <a href="https://verta-master.github.io/autoservice/" class="works__link">Ссылка на проект</a>
-            <p class="text">Особенности проекта:</p>
-            <ul class="text-list">
-              <li class="text-list__item">Десктопная верстка 6 страниц</li>
-              <li class="text-list__item">Использованы флексбоксы и БЭМ-классификация</li>
-              <li class="text-list__item">Реализация модальных окон и слайдеров на JS/jQuery</li>
-              <li class="text-list__item">Клиентская валидация формы</li>
-              <li class="text-list__item">Минифицированные файлы стилей и скриптов</li>
-              <li class="text-list__item">Автоматизация Gulp + Less</li>
-            </ul>
-          </div>
-        </div>
-        <div class="works__modal works__modal--creative">
-          <div class="works__header works__header--creative">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
-              <g>
-                <rect class="list__stroke" x="1" y="11" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="62" height="42"/>
-                <polyline class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="1,47 24,27 36,39 42,31 63,49 	"/>
-                <circle class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="51" cy="22" r="5"/>
-              </g>
-            </svg>
-            <h3 class="works__title">Моя верстка</h3>
-            <button class="works__close">Закрыть</button>
-          </div>
-          <div class="works__decsr">
-            <h2 class="title-h2">Сайт-визитка агентства</h2>
-            <a href="https://verta-master.github.io/CreativeAgency/" class="works__link">Ссылка на проект</a>
-            <p class="text">Особенности проекта:</p>
-            <ul class="text-list">
-              <li class="text-list__item">Адаптивно-резиновая верстка 5 страниц для брейкпоинтов на 320, 768 и 1280px, но прекрасно смотрится и на промежуточных размерах</li>
-              <li class="text-list__item">Использованы флексбоксы и БЭМ-классификация</li>
-              <li class="text-list__item">Принцип Desktop First</li>
-              <li class="text-list__item">css-фильтр в резиновом блоке выбора картинок, совмещенный с jQuery-лайтбоксом</li>
-              <li class="text-list__item">css-аккордеон</li>
-              <li class="text-list__item">Реализация слайдеров на jQuery</li>
-              <li class="text-list__item">Мобильное меню на JS</li>
-              <li class="text-list__item">Минифицированные файлы стилей</li>
-              <li class="text-list__item">Автоматизация Gulp + Less</li>
-            </ul>
+          <!--  Coats   -->
+          <div class="works__show" data-fancybox="group-1">
+            <div class="works__header">
+              <svg class="works__svg" x="0" y="0" width="64" height="64" viewBox="0 0 64 64">
+                <use href="#icon-pic"></use>
+              </svg>
+              <h3 class="works__title">Моя верстка</h3>
+            </div>
+            <div class="works__about">
+              <h2 class="title-h2">Интернет-магазин шуб</h2>
+              <a href="https://verta-master.github.io/shuba/" class="works__link">Ссылка на проект</a>
+              <img class="works__pic" src="img/shuba_350x217.jpg" alt="Интернет-магазин шуб" width="350" height="217">
+              <p class="text"><b>Особенности проекта:</b></p>
+              <ul class="text-list">
+                <li class="text-list__item">Адаптивная верстка 4 страниц для размеров 320, 768 и 1230px</li>
+                <li class="text-list__item">Использованы флексбоксы и БЭМ</li>
+                <li class="text-list__item">Desktop First</li>
+                <li class="text-list__item">Реализация модальных окон и слайдеров на JS/jQuery</li>
+                <li class="text-list__item">Анимация картинок</li>
+                <li class="text-list__item">Минифицированные файлы стилей и скриптов</li>
+                <li class="text-list__item">Автоматизация Gulp + Less</li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="works__modal works__modal--promo">
-          <div class="works__header works__header--promo">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
-              <g>
-                <rect class="list__stroke" x="1" y="11" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="62" height="42"/>
-                <polyline class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="1,47 24,27 36,39 42,31 63,49 	"/>
-                <circle class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="51" cy="22" r="5"/>
-              </g>
-            </svg>
-            <h3 class="works__title">Моя верстка</h3>
-            <button class="works__close">Закрыть</button>
+        
+<!--  Business-cards   -->
+        <div style="display: none;">
+          <!-- Creative Agency -->
+          <div class="works__show" id="cards">
+            <div class="works__header">
+              <svg class="works__svg" x="0" y="0" width="64" height="64" viewBox="0 0 64 64">
+                <use href="#icon-pic"></use>
+              </svg>
+              <h3 class="works__title">Моя верстка</h3>
+            </div>
+            <div class="works__about">
+              <h2 class="title-h2">Сайт-визитка креативного агентства</h2>
+              <a href="https://verta-master.github.io/CreativeAgency/" class="works__link">Ссылка на проект</a>
+              <img class="works__pic" src="img/CreativeAgency.jpg" alt="Сайт-визитка" width="350" height="217">
+              <p class="text"><b>Особенности проекта:</b></p>
+              <ul class="text-list">
+                <li class="text-list__item">Адаптивно-резиновая верстка 5 страниц для брейкпоинтов на 320, 768 и 1280px, но прекрасно смотрится и на промежуточных размерах</li>
+                <li class="text-list__item">Использованы флексбоксы и БЭМ-классификация</li>
+                <li class="text-list__item">Desktop First</li>
+                <li class="text-list__item">Css-фильтр в резиновом блоке выбора картинок, совмещенный с jQuery-лайтбоксом</li>
+                <li class="text-list__item">Css-аккордеон</li>
+                <li class="text-list__item">Реализация слайдеров на jQuery</li>
+                <li class="text-list__item">Мобильное меню на JS</li>
+                <li class="text-list__item">Минифицированные файлы стилей</li>
+                <li class="text-list__item">Автоматизация Gulp + Less</li>
+              </ul>
+            </div>
           </div>
-          <div class="works__decsr">
-            <h2 class="title-h2">Промо-лендинг</h2>
-            <a href="https://verta-master.github.io/promo/" class="works__link">Ссылка на проект</a>
-            <p class="text">Особенности проекта:</p>
-            <ul class="text-list">
-              <li class="text-list__item">Адаптивная верстка для размеров 320, 480, 768, 1024 и 1600px</li>
-              <li class="text-list__item">Использованы флексбоксы и БЭМ-классификация</li>
-              <li class="text-list__item">Принцип Desktop First</li>
-              <li class="text-list__item">Реализация модальных окон jQuery</li>
-              <li class="text-list__item">Сложные фоны, анимация кнопок, формы и хедера</li>
-              <li class="text-list__item">Минифицированные файлы стилей и скриптов</li>
-              <li class="text-list__item">Автоматизация Gulp + Less</li>
-            </ul>
+          <!-- Pub Brugge -->
+          <div class="works__show" data-fancybox="group-2">
+            <div class="works__header">
+              <svg class="works__svg" x="0" y="0" width="64" height="64" viewBox="0 0 64 64">
+                <use href="#icon-pic"></use>
+              </svg>
+              <h3 class="works__title">Моя верстка</h3>
+            </div>
+            <div class="works__about">
+              <h2 class="title-h2">Сайт паба</h2>
+              <a href="https://verta-master.github.io/pub/" class="works__link">Ссылка на проект</a>
+              <figure class="works__wrap">
+                <img class="works__pic" src="img/pub_350x217.jpg" alt="Сайт паба" width="350" height="217">
+                <img class="works__pic" src="img/pub-internal_350x217.jpg" alt="Сайт паба" width="350" height="217">
+              </figure>
+              <p class="text"><b>Особенности проекта:</b></p>
+              <ul class="text-list">
+                <li class="text-list__item">Резиновая верстка 5 страниц</li>
+                <li class="text-list__item">Использованы флексбоксы и БЭМ</li>
+                <li class="text-list__item">Desktop First</li>
+                <li class="text-list__item">Реализация модальных окон и галереи на JS/jQuery</li>
+                <li class="text-list__item">Анимированные детали и градиентные эффекты</li>
+                <li class="text-list__item">Минифицированные файлы стилей и скриптов</li>
+                <li class="text-list__item">Автоматизация Gulp + Less</li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="works__modal works__modal--pink">
-          <div class="works__header works__header--pink">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
-              <g>
-                <rect class="list__stroke" x="1" y="11" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="62" height="42"/>
-                <polyline class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="1,47 24,27 36,39 42,31 63,49 	"/>
-                <circle class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="51" cy="22" r="5"/>
-              </g>
-            </svg>
-            <h3 class="works__title">Моя верстка</h3>
-            <button class="works__close">Закрыть</button>
+          <!-- Autoservice -->
+          <div class="works__show" data-fancybox="group-2">
+            <div class="works__header works__header--jsb">
+              <svg class="works__svg" x="0" y="0" width="64" height="64" viewBox="0 0 64 64">
+                <use href="#icon-pic"></use>
+              </svg>
+              <h3 class="works__title">Моя верстка</h3>
+            </div>
+            <div class="works__about">
+              <h2 class="title-h2">Сайт автосервиса</h2>
+              <a href="https://verta-master.github.io/autoservice/" class="works__link">Ссылка на проект</a>
+              <img class="works__pic" src="img/autoservice_350x217.jpg" alt="Сайт автосервиса" width="350" height="217">
+              <p class="text">Особенности проекта:</p>
+              <ul class="text-list">
+                <li class="text-list__item">Десктопная верстка 6 страниц</li>
+                <li class="text-list__item">Использованы флексбоксы и БЭМ</li>
+                <li class="text-list__item">Реализация модальных окон и слайдеров на JS/jQuery</li>
+                <li class="text-list__item">Клиентская валидация формы</li>
+                <li class="text-list__item">Эффектные градиенты для фонов</li>
+                <li class="text-list__item">Минифицированные файлы стилей и скриптов</li>
+                <li class="text-list__item">Автоматизация Gulp + Less</li>
+              </ul>
+            </div>
           </div>
-          <div class="works__decsr">
-            <h2 class="title-h2">Проект "Пинк"</h2>
-
-            <a href="https://verta-master.github.io/368857-pink/" class="works__link">Ссылка на проект</a>
-            <p class="text">Особенности проекта:</p>
-            <ul class="text-list">
-              <li class="text-list__item">Адаптивная верстка трех страниц для размеров 320, 660 и 960px</li>
-              <li class="text-list__item">Использованы флексбоксы и БЭМ-классификация</li>
-              <li class="text-list__item">Принцип Mobile First</li>
-              <li class="text-list__item">Retina-ready адаптивная графика и svg</li>
-              <li class="text-list__item">Мобильное меню на JS</li>
-              <li class="text-list__item">Минифицированные файлы стилей и скриптов</li>
-              <li class="text-list__item">Автоматизация Gulp + Less</li>
-            </ul>
+          <!-- Fantazers -->
+          
+          <!-- Hotels -->
+          
+          <!-- Pink -->
+          <div class="works__show" data-fancybox="group-2">
+            <div class="works__header works__header--jsb">
+              <svg class="works__svg" x="0" y="0" width="64" height="64" viewBox="0 0 64 64">
+                <use href="#icon-pic"></use>
+              </svg>
+              <h3 class="works__title">Моя верстка</h3>
+            </div>
+            <div class="works__about">
+              <h2 class="title-h2">Проект "Пинк"</h2>
+              <a href="https://verta-master.github.io/368857-pink/" class="works__link">Ссылка на проект</a>
+              <img class="works__pic" src="img/pink.jpg" alt="Сайт автосервиса" width="350" height="217">
+              <p class="text">Особенности проекта:</p>
+              <ul class="text-list">
+                <li class="text-list__item">Адаптивная верстка трех страниц для размеров 320, 660 и 960px</li>
+                <li class="text-list__item">Использованы флексбоксы и БЭМ-классификация</li>
+                <li class="text-list__item">Принцип Mobile First</li>
+                <li class="text-list__item">Retina-ready адаптивная графика и svg</li>
+                <li class="text-list__item">Мобильное меню на JS</li>
+                <li class="text-list__item">Минифицированные файлы стилей и скриптов</li>
+                <li class="text-list__item">Автоматизация Gulp + Less</li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="works__modal works__modal--sedona">
-          <div class="works__header works__header--sedona">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
-              <g>
-                <rect class="list__stroke" x="1" y="11" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="62" height="42"/>
-                <polyline class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="1,47 24,27 36,39 42,31 63,49 	"/>
-                <circle class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="51" cy="22" r="5"/>
-              </g>
-            </svg>
-            <h3 class="works__title">Моя верстка</h3>
-            <button class="works__close">Закрыть</button>
-          </div>
-          <div class="works__decsr">
-            <h2 class="title-h2">Проект "Седона"</h2>
-
-            <a href="https://verta-master.github.io/368857-sedona/" class="works__link">Ссылка на проект</a>
-            <p class="text">Особенности проекта:</p>
-            <ul class="text-list">
-              <li class="text-list__item">Адаптивная верстка трех страниц для размеров 320, 728 и 1200px</li>
-              <li class="text-list__item">Использованы флексбоксы и БЭМ-классификация</li>
-              <li class="text-list__item">Принцип Mobile First</li>
-              <li class="text-list__item">Retina-ready адаптивная графика и svg</li>
-              <li class="text-list__item">Мобильное меню на JS</li>
-              <li class="text-list__item">Минифицированные файлы стилей и скриптов</li>
-              <li class="text-list__item">Автоматизация Gulp + Less</li>
-            </ul>
-          </div>
-        </div>
-        <div class="works__modal works__modal--take">
-          <div class="works__header works__header--take">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
-              <g>
-                <rect class="list__stroke" x="1" y="11" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="62" height="42"/>
-                <polyline class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="1,47 24,27 36,39 42,31 63,49 	"/>
-                <circle class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="51" cy="22" r="5"/>
-              </g>
-            </svg>
-            <h3 class="works__title">Моя верстка</h3>
-            <button class="works__close">Закрыть</button>
-          </div>
-          <div class="works__decsr">
-            <h2 class="title-h2">Лендинг "Take"</h2>
-
-            <a href="https://verta-master.github.io/Landing-Take/" class="works__link">Ссылка на проект</a>
-            <p class="text">Особенности проекта:</p>
-            <ul class="text-list">
-              <li class="text-list__item">Одностраничный лендинг</li>
-              <li class="text-list__item">Использованы флоаты для сетки</li>
-              <li class="text-list__item">Абсолютно резиновая верстка, включая шрифты</li>
-            </ul>
-          </div>
-        </div>
-        <div class="works__modal works__modal--berezki">
-          <div class="works__header works__header--berezki">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
-              <g>
-                <rect class="list__stroke" x="1" y="11" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="62" height="42"/>
-                <polyline class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="1,47 24,27 36,39 42,31 63,49 	"/>
-                <circle class="list__stroke" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="51" cy="22" r="5"/>
-              </g>
-            </svg>
-            <h3 class="works__title">Моя верстка</h3>
-            <button class="works__close">Закрыть</button>
-          </div>
-          <div class="works__decsr">
-            <h2 class="title-h2">Лендинг санатория "Березки"</h2>
-
-            <a href="https://verta-master.github.io/Landing-Berezki/" class="works__link">Ссылка на проект</a>
-            <p class="text">Особенности проекта:</p>
-            <ul class="text-list">
-              <li class="text-list__item">Очень длинный одностраничный лендинг</li>
-              <li class="text-list__item">Адаптивная верстка для размеров 320 и 960px</li>
-              <li class="text-list__item">Использованы флексбоксы и БЭМ-классификация</li>
-              <li class="text-list__item">Принцип Mobile First</li>
-              <li class="text-list__item">Мобильное меню и всплывающие окна на JS</li>
-              <li class="text-list__item">Слайдеры на css и jQuery</li>
-              <li class="text-list__item">Минифицированные файлы стилей и скриптов</li>
-              <li class="text-list__item">Автоматизация Gulp + Less</li>
-            </ul>
+          <!-- Sedona -->
+          <div class="works__show" data-fancybox="group-2">
+            <div class="works__header works__header--jsb">
+              <svg class="works__svg" x="0" y="0" width="64" height="64" viewBox="0 0 64 64">
+                <use href="#icon-pic"></use>
+              </svg>
+              <h3 class="works__title">Моя верстка</h3>
+            </div>
+            <div class="works__about">
+              <h2 class="title-h2">Проект "Седона"</h2>
+              <a href="https://verta-master.github.io/368857-sedona/" class="works__link">Ссылка на проект</a>
+              <img class="works__pic" src="img/sedona.jpg" alt="Сайт автосервиса" width="350" height="217">
+              <p class="text">Особенности проекта:</p>
+              <ul class="text-list">
+                <li class="text-list__item">Адаптивная верстка трех страниц для размеров 320, 728 и 1200px</li>
+                <li class="text-list__item">Использованы флексбоксы и БЭМ-классификация</li>
+                <li class="text-list__item">Принцип Mobile First</li>
+                <li class="text-list__item">Retina-ready адаптивная графика и svg</li>
+                <li class="text-list__item">Мобильное меню на JS</li>
+                <li class="text-list__item">Минифицированные файлы стилей и скриптов</li>
+                <li class="text-list__item">Автоматизация Gulp + Less</li>
+              </ul>
+            </div>
           </div>
         </div>
-
+        
+<!--  Landing pages    -->
+        <div style="display: none;">
+          <!-- Promo -->
+          <div class="works__show" id="landings">
+            <div class="works__header works__header--jsb">
+              <svg class="works__svg" x="0" y="0" width="64" height="64" viewBox="0 0 64 64">
+                <use href="#icon-pic"></use>
+              </svg>
+              <h3 class="works__title">Моя верстка</h3>
+            </div>
+            <div class="works__about">
+              <h2 class="title-h2">Промо-лендинг</h2>
+              <a href="https://verta-master.github.io/promo/" class="works__link">Ссылка на проект</a>
+              <p class="text">Особенности проекта:</p>
+              <ul class="text-list">
+                <li class="text-list__item">Адаптивная верстка для размеров 320, 480, 768, 1024 и 1600px</li>
+                <li class="text-list__item">Использованы флексбоксы и БЭМ-классификация</li>
+                <li class="text-list__item">Принцип Desktop First</li>
+                <li class="text-list__item">Реализация модальных окон jQuery</li>
+                <li class="text-list__item">Сложные фоны, анимация кнопок, формы и хедера</li>
+                <li class="text-list__item">Минифицированные файлы стилей и скриптов</li>
+                <li class="text-list__item">Автоматизация Gulp + Less</li>
+              </ul>
+            </div>
+          </div>
+          <!-- Locks -->
+          <div class="works__show" data-fancybox="group-3">
+            <div class="works__header works__header--jsb">
+              <svg class="works__svg" x="0" y="0" width="64" height="64" viewBox="0 0 64 64">
+                <use href="#icon-pic"></use>
+              </svg>
+              <h3 class="works__title">Моя верстка</h3>
+            </div>
+            <div class="works__about">
+              <h2 class="title-h2">лендинг</h2>
+              <a href="" class="works__link">Ссылка на проект</a>
+              <p class="text">Особенности проекта:</p>
+              <ul class="text-list">
+                <li class="text-list__item">Адаптивная верстка для размеров 320, 480, 768, 1024 и 1600px</li>
+                <li class="text-list__item">Использованы флексбоксы и БЭМ</li>
+                <li class="text-list__item">Desktop First</li>
+                <li class="text-list__item">Реализация модальных окон jQuery</li>
+                <li class="text-list__item"></li>
+                <li class="text-list__item">Минифицированные файлы стилей и скриптов</li>
+                <li class="text-list__item">Автоматизация Gulp + Less</li>
+              </ul>
+            </div>
+          </div>
+          <!-- Uponor -->
+          
+          <!-- Berezki -->
+          <div class="works__show" data-fancybox="group-3">
+            <div class="works__header works__header--jsb">
+              <svg class="works__svg" x="0" y="0" width="64" height="64" viewBox="0 0 64 64">
+                <use href="#icon-pic"></use>
+              </svg>
+              <h3 class="works__title">Моя верстка</h3>
+            </div>
+            <div class="works__about">
+              <h2 class="title-h2">Лендинг санатория "Березки"</h2>
+              <a href="https://verta-master.github.io/Landing-Berezki/" class="works__link">Ссылка на проект</a>
+              <p class="text">Особенности проекта:</p>
+              <ul class="text-list">
+                <li class="text-list__item">Очень длинный одностраничный лендинг</li>
+                <li class="text-list__item">Адаптивная верстка для размеров 320 и 960px</li>
+                <li class="text-list__item">Использованы флексбоксы и БЭМ</li>
+                <li class="text-list__item">Принцип Mobile First</li>
+                <li class="text-list__item">Мобильное меню и всплывающие окна на JS</li>
+                <li class="text-list__item">Слайдеры на css и jQuery</li>
+                <li class="text-list__item">Минифицированные файлы стилей и скриптов</li>
+                <li class="text-list__item">Автоматизация Gulp + Less</li>
+              </ul>
+            </div>
+          </div>
+          <!-- Take -->
+          <div class="works__show" data-fancybox="group-3">
+            <div class="works__header works__header--jsb">
+              <svg class="works__svg" x="0" y="0" width="64" height="64" viewBox="0 0 64 64">
+                <use href="#icon-pic"></use>
+              </svg>
+              <h3 class="works__title">Моя верстка</h3>
+            </div>
+            <div class="works__about">
+              <h2 class="title-h2">Лендинг "Take"</h2>
+              <a href="https://verta-master.github.io/Landing-Take/" class="works__link">Ссылка на проект</a>
+              <p class="text">Особенности проекта:</p>
+              <ul class="text-list">
+                <li class="text-list__item">Одностраничный лендинг</li>
+                <li class="text-list__item">Использованы флоаты для сетки</li>
+                <li class="text-list__item">Абсолютно резиновая верстка, включая шрифты</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section class="tools">
@@ -784,17 +829,6 @@
   
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/script.js"></script>
-  <script src="js/swiper.min.js"></script>
-  <script>
-    var swiper = new Swiper('.swiper-container', {
-      pagination: '.swiper-pagination',
-      paginationClickable: true,
-      nextButton: '.swiper-button-next',
-      prevButton: '.swiper-button-prev',
-      spaceBetween: 25,
-      slidesPerView: 'auto',
-      freeMode: true
-    });
-  </script>
+  <script src="js/jquery.fancybox.min.js"></script>
 </body>
 </html>
