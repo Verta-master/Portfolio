@@ -7,10 +7,18 @@
 .contacts__data {
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
-.contacts__mail {
-  .list__stroke {
+.contacts__item {
+  transition: ease-out 0.3s;
+  
+  .contacts__mail {
+    fill: none;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
     stroke: @light;
   }
   
@@ -22,32 +30,7 @@
   &:hover {
     .contacts__text {
       color: @dark-blue;
-    }
-  }
-}
-
-.contacts__skype {
-  svg {
-    width: 50px;
-    height: 50px;
-  }
-  
-  &:hover {
-    .contacts__text {
-      color: @dark-blue;
-    }
-  }
-}
-
-.contacts__git {
-  svg {
-    width: 50px;
-    height: 50px;
-  }
-  
-  &:hover {
-    .contacts__text {
-      color: @dark-blue;
+      transition: ease-out 0.3s;
     }
   }
 }
@@ -58,12 +41,6 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-
-.contacts__mail,
-.contacts__skype,
-.contacts__git {
-  width: 100%;
 }
 
 .contacts__text {

@@ -26,19 +26,30 @@
     }
     
     .arrow-hover {
+      fill: none;
+      stroke-width: 2;
+      stroke-miterlimit: 10;
       stroke: @blue;
+      transition: ease-out 0.3s;
     }
     
-    &:hover .arrow-hover {
-      stroke: @dark-blue;
+    &:hover,
+    &:active {
+      .arrow-hover {
+        stroke: @dark-blue;
+        transition: ease-out 0.3s;
+      }
     }
     
     .arrow-hover--light {
       stroke: @light;
     }
     
-    &:hover .arrow-hover--light {
-      stroke: @grey;
+    &:hover,
+    &:active {
+      .arrow-hover--light {
+        stroke: @grey;
+      }
     }
     
     &--up,

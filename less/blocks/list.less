@@ -72,24 +72,39 @@
   justify-content: center;
   align-items: center;
   
-  .list__stroke {
+  .list__svg {
+    fill: none;
     stroke: @blue;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+    transition: ease-out 0.3s;
   }
   
-  &:hover .list__stroke {
-    stroke: @dark-blue;
+  &:hover,
+  &:active {
+    .list__svg {
+      stroke: @dark-blue;
+      transition: ease-out 0.3s;
+    }
   }
 }
 
 .list__icon--promo {
-  .list__stroke {
+  .list__svg {
+    fill: none;
     stroke: @light;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+    transition: ease-out 0.3s;
   }
   
-  &:hover .list__stroke {
-//    stroke: @grey;
-    stroke: @dark-blue;
-    fill: @light;
+  &:hover,
+  &:active {
+    .list__svg {
+      stroke: @dark-blue;
+      fill: @light;
+      transition: ease-out 0.3s;
+    }
   }
 }
 
