@@ -2158,8 +2158,6 @@ button.swiper-pagination-bullet {
   .works__pic{
     float: left;
     margin-right: 40px;
-  }
-  .works__pic:first-child{
     margin-top: 25px;
   }
   .swiper-slide{
